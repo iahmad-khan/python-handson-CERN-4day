@@ -12,3 +12,15 @@ name errors:
   1. typo
   2. looking in the wrong name space , place
   3. it is not there yet , not defined before use
+
+modules:
+
+  dont use the form: from math import * , it causes confusion and errors
+  import one thing at a time , or use qualifiers such as math.sin , or from math import sin etc
+
+PEP , python enhancement proposals
+PEP8 , python style guide , search python pep
+
+Python is dynamic typed
+Binding
+python variable bindings
