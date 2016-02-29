@@ -7,3 +7,8 @@ jython .. java
 iron python .. .net
 pypy ..python in python
 
+name errors:  
+
+  1. typo
+  2. looking in the wrong name space , place
+  3. it is not there yet , not defined before use
