@@ -1,0 +1,9 @@
+see ... the evolution of programmer
+pydoc -p 8000
+
+
+cpython  .. c
+jython .. java
+iron python .. .net
+pypy ..python in python
+
