@@ -14,6 +14,10 @@ for line in f:
 #using cmp
 #users_and_ids.sort(cmp=my_cmp)
 #using lambda
-users_and_ids.sort(key=lambda k:k[1])
+
+def key1(k):
+  return k[1]
+
+users_and_ids.sort(key=key1)
 for id,usr in users_and_ids:
   print id,usr
