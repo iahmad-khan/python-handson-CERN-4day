@@ -2,6 +2,5 @@
 from operator import add
 data=open('input','r')
 for line in data:
-  if line.rstrip():
-    sum=reduce(add,map(int,line.split()))
-    print sum
+  sum=reduce(add,map(int,line.split()),0)
+  print sum
