@@ -15,9 +15,11 @@ for line in f:
 #users_and_ids.sort(cmp=my_cmp)
 #using lambda
 
-def key1(k):
-  return k[1]
+def make_key(n):
+  def key1(k):
+    return k[n]
+  return key1
 
-users_and_ids.sort(key=key1)
+users_and_ids.sort(key = make_key(1))
 for id,usr in users_and_ids:
   print id,usr
