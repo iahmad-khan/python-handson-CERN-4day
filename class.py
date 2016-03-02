@@ -2,12 +2,20 @@
 class counter:
 
     def __init__(self, start):
-        print dir(self)
         self.count = start
-        print dir(self)
-
+   
     def up(self, n=1):
         self.count += n
 
     def down(self, n=1):
         self.count -= n
+
+class addcounter(counter):
+
+  def __repr__(self):
+    return 'addcounter({.count})'.format(self)
+
+  def __add__(self,other):
+    return addcounter(self.count+other.count)
+
+#print addcounter(3) + addcounter(4)
