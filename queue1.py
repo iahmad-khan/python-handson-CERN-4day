@@ -1,3 +1,6 @@
+class EmptyQueue(Exception):
+  pass
+
 class make_queue:
 
   def __init__(self):
@@ -7,10 +10,13 @@ class make_queue:
     self._queue.append(item)
 
   def pop(self):
-    return self._queue.pop(0)
+    try:
+      return self._queue.pop(0)
+    except IndexError:
+      raise EmptyQueue
 
 class emerq(make_queue):
-
-  def add1(self,item):
+#special add that adds to the front of queue
+  def add2(self,item):
     self._queue.insert(0,item)
     
