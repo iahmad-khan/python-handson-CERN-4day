@@ -32,3 +32,7 @@ exceptions:
    1. messeges sent from top of the stack to any1 down there who cares to listen
    2. alternative channel for data flow out of functions
    3. branching mechanism like that of if , while , for
+
+SWIG
+boost.python
+cython
